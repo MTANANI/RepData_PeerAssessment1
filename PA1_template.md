@@ -38,6 +38,7 @@ stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 ```r
 qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 ```
+![image](https://user-images.githubusercontent.com/73906533/116674210-dd1ec500-a993-11eb-86c6-143ec53195e2.png)
 
 
 
@@ -70,6 +71,7 @@ ggplot(data=averageStepsPerTimeBlock, aes(x=interval, y=meanSteps)) +
     xlab("5-minute interval") +
     ylab("average number of steps taken") 
 ```
+![image](https://user-images.githubusercontent.com/73906533/116674281-f9226680-a993-11eb-8d92-a58053f7d583.png)
 
 
 ##### 2. The 5-minute interval on average across all the days in the dataset that contains the maximum number of steps?
