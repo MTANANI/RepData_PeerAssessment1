@@ -114,6 +114,7 @@ stepsByDayImputed <- tapply(activityDataImputed$steps, activityDataImputed$date,
 qplot(stepsByDayImputed, xlab='Total steps per day (Imputed)', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
+![image](https://user-images.githubusercontent.com/73906533/116674370-16573500-a994-11eb-895a-a4d9cd51154a.png)
 
 
 
@@ -155,4 +156,5 @@ ggplot(averagedActivityDataImputed, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
+![image](https://user-images.githubusercontent.com/73906533/116674413-24a55100-a994-11eb-97b4-201e2bf4bfa1.png)
 
